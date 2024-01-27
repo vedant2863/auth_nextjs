@@ -1,6 +1,9 @@
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
- 
+
+
+//middleware to check wheter user is login or not based on it user is redirect on page
+
+import { NextRequest, NextResponse } from "next/server"
+
 
 export function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname
